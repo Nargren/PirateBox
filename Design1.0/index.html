@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+  
+  <link rel="shortcut icon" href="favicon.ico"><title>PirateBox</title>
+  
+
+  
+  
+  <style type="text/css">
+<!--
+html {
+}
+body {
+  height: 100%;
+  margin-left: 0px;
+  background-color: #f1f1f1;
+  padding-left: 0px;
+  width: 100%;
+}
+span {
+  color: #81c468;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13pt;
+  position: relative;
+}
+#header {
+  width: 100%;
+  height: 35px;
+  line-height: 25px;
+  position: absolute;
+  font-size: 20px;
+  background-image: url(header-full-bkg.png);
+  text-transform: uppercase;
+  font-style: normal;
+  text-align: center;
+  font-family: Arial,Helvetica,sans-serif;
+  color: black;
+  top: 0px;
+  text-decoration: none;
+  display: block;
+  list-style-type: none;
+}
+#header a {
+  font-size: 20px;
+  line-height: 30px;
+  color: #3366ff;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+  padding-right: 60px;
+}
+#headerMenuList {
+  display: block;
+  width: 100%;
+  top: 2px;
+  position: absolute;
+}
+#logo {
+  position: absolute;
+  display: inline;
+  top: 50px;
+  width: 18%;
+  text-decoration: none;
+  padding-left: 0px;
+}
+#uploadform {
+  color: black;
+  text-align: center;
+  width: 20%;
+  padding-top: 27%;
+  line-height: 20px;
+  position: absolute;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13pt;
+}
+#contents {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial,Helvetica,sans-serif;
+  height: 91%;
+  position: absolute;
+  width: 74%;
+  left: 25.5%;
+  top: 40px;
+  right: 0%;
+  float: left;
+  display: block;
+}
+#menulist-hover {
+  color: #3b5eef;
+}
+#footer {
+  width: 100%;
+  line-height: 13pt;
+  font-size: 13pt;
+  height: 15pt;
+  color: white;
+  position: absolute;
+  text-align: center;
+  background-image: url(header-full-bkg.png);
+  bottom: 0px;
+}
+
+  --></style><!--piratebox.lan-->
+  
+  <script type="text/javascript" src="jquery.min.js"></script></head><body>
+<div id="message" class="box"> </div>
+
+<!--/ HEADER  /-->
+<div id="header">
+<div id="headerMenuList"> <a target="main" href="home.html" title="Home"><img target="main" href="home.html" style="border: 0px solid ; height: 21px; width: 24px;" alt="" src="home-icon.png"><span>Home</span></a>
+<a href="/Shared" target="main" title="Dowload Files"><span>Browse</span></a>
+<a target="main" href="chat.html" title="Chat with Others"><span>Chat</span></a>
+<a target="main" href="forum.html" title="Send a Message"><span>Forum</span></a>
+<a target="main" href="about.html" title="Learn More"><span>About</span></a>
+</div>
+</div>
+
+<!--/ LOGO /-->
+<div id="logo"><img src="piratebox-logo.png" alt="PirateBox logo" style="width: 226px; height: 199px;"></div>
+
+<!--/ UPLOAD /-->
+<div id="uploadform">Do you have something to share?<br>
+<br>
+<input onclick="window.open('http://piratebox.lan:8080','Send a file','width=480,height=80')" name="upload" value="Send a File!" type="button"></div>
+
+<div id="footer">Device <span>Laptop</span> | Owner <span>Nargren</span>
+| Storage <span>40
+GB</span> |
+Transfer up
+to <span>2MB/s</span>
+</div>
+
+<!--/ CONTENTS /-->
+<div id="contents"><iframe name="main" border="0" src="home.html" frameborder="0" height="99%" width="99%">Your browser doesn't support
+iframes!</iframe></div>
+
+</body></html>

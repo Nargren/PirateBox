@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="main.css" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>PirateBox - Share Freely</title>
+	<script src="jquery.min.js"/>	
+	<script type="text/javascript">
+	function refresh() {
+	 frame = document.getElementsByName( 'psoread' )[0];
+	 frame.contentWindow.location.reload()
+	}
+	interval = window.setInterval( 'refresh()', 8000 );
+  </script>
+</head>
+  <body>
+   <div id="page">
+  
+	<nav id="top_nav">
+		<ul>
+			<li><a class="links" href="index.html" title="Home page">Home</a></li>
+			<li><a class="links" href="/Shared" target="blank" title="Browse & Download files">Download</a></li>
+			<li><a class="links" href="" title="Under construction...">Forum</a></li>
+			<li><a class="links" href="mindex.html" title="For mobile users">Mobile</a></li>
+		</ul>
+	</nav>
+	<div id="contents">
+		<section id="main">
+			<article>
+			<h1>Welcome to my "PirateBox"!</h1>
+			<h2>Nothing illegal, just a cool, social place</h2>
+			<p>Now first of all, there is nothing illegal going on here, this is a social place where you can chat and share files with people around you, anonymously!
+			This is an off-line network, specially designed and developed for file-sharing and chat services only. Staying off the grid is a precaution to maintain your full anonymity.		
+			Please have fun, chat with people and feel free to share any files you may like.</p>
+			</article>		
+			<article class="special">
+				<h3>Welcome to the Chat!<h3>
+				<h2>It is 100% anonymous. Pick a name and talk with the others around you.</h2>
+				<iframe id="psoread" name="psoread" src="/cgi-bin/psoread.py" #ccc="" frameborder="1" width="95%" height="300px">
+				Your browser does not support inline frames or is currently configured
+				not to display inline frames.</iframe>
+				<script language="javascript">
+				<!--
+				function reset() {
+				self.document.psowrte.data.value="";
+				self.document.psowrte.data.focus();
+				}
+				-->
+				</script>		
+				<div id="user"><form method="post" action="/cgi-bin/psowrte.py" target="psoread" name="psowrte" onsubmit="setTimeout('reset()',10)"> <b>Name:</b><input value="Anonymous" name="name" size="9" type="text">&nbsp;&nbsp; <b>Message:</b><input name="data" size="35" type="text"> <input value="Say!" name="submit" type="submit">
+				</div>
+				<div id="color"><b>Color:</b> Default<input value="def" name="color" checked="checked" type="radio"> | <font color="#0000ff">Blue</font><input value="blue" name="color" type="radio"> | <font color="#008000">Green</font><input value="green" name="color" type="radio"> | <font color="#ff6600">Orange</font><input value="orange" name="color" type="radio"> | <font color="#ff0000">Red</font><input value="red" name="color" type="radio">
+				</div>
+				</form>
+			</article>
+			<article>
+				<h1>About the PirateBox</h1>
+				<p>Inspired by pirate radio and the free culture movment, PirateBox is a self-contained mobile collaboration and file sharing device. PirateBox utilizes Free, Libre and Open Source software (FLOSS) to create mobile wireless file sharing networks where users can anonymously share images, video, audio, documents, and other digital content.</p>
+				<p>PirateBox is designed to be safe and secure. No logins are required and no user data is logged. The system is purposely not connected to the Internet in order to prevent tracking and preserve user privacy.</p>
+				<p>PirateBox was created by David Darts and is registered under a Free Art License (2011). To learn more about the project or to find out how to build your own PirateBox system, please visit <a href="http://wiki.daviddarts.com/piratebox">http://wiki.daviddarts.com/piratebox</a>.</p>
+			</article>		
+		</section>		
+			<aside id="main_side">
+			<img id="side_logo" src="piratebox-logo_large.png">
+				<div id="upload">
+				<h2>Upload a file!</h2>
+				<p>Please do not refresh this page during file upload!</p>
+				<iframe  width='350' height="80px" frameBorder='0' src='http://piratebox.lan:8080'>Your browser does not supprt Iframes.. If you want to upload something, follow this <a href='http://piratebox.lan:8080'>Link</a></iframe>
+				</div>
+			<div id="news">
+			<h2>Do you want to build your PirateBox?</h2>
+			<p>Visit  Daviddarts.com after you have connected to the internet to find useful guides & instructions on building your own PirateBox. By checking out the forums you can not only learn how to make a PirateBox for less than 100 punds, but also you can stay informed
+			about the development of the project.</p>
+			</div>
+			</aside>
+	</div>		
+			
+		
+</div>
+<footer id="footer">
+<p>PirateBox is Licenced under Free Art Licence (2011) | Storage 30GB | Speeds up to 2 MB/s</p>
+</footer>
+</body>
+</html>

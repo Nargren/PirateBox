@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width="480" />
+	<link rel="stylesheet" href="mobile.css" media="handheld,all">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>PirateBox - Mobile</title>  
+	<script type="text/javascript">
+function refresh() {
+ frame = document.getElementsByName( 'psoread' )[0];
+ frame.contentWindow.location.reload()
+}
+interval = window.setInterval( 'refresh()', 8000 );
+  </script>
+</head>
+  <body>
+	<nav id="top_nav">
+		<ul>
+			<li><a class="links" href="index.html" title="Return to browser version!">Browser</a></li>
+			<li><a class="links" href="/Shared" target="blank" title="Browse PirateBox">Download</a></li>
+			
+		</ul>
+	</nav>
+ <div id="page">
+	<div id="contents">
+		<section id="main">
+			<article class="special">
+			<h3>Welcome to my "PirateBox"!</h3>
+			<h2>NOTHING ILLEGAL, just a cool, social place</h2>
+			<p>Now first of all, there is nothing illegal going on here, this is a social place where you can chat with people around you and share files absolutely anonymously!
+			No data is logged and you are on pourpose not connected to the internet to maintain your anonymity.
+			This is only a local network (Wi-Fi) hence you have to remain in range if you wish to stay connected.
+			Please have fun, chat with people and also feel free to share any files you may like.</p>		
+			</article>			
+			<article>
+			<h1>Welcome to the Chat!<h1>
+			<h2>It is 100% anonymous.</h2>
+			<iframe name="psoread" src="/cgi-bin/psoread.py" #ccc="" frameborder="1" width="100%" height="250px">
+			Your browser does not support inline frames or is currently configured
+			not to display inline frames.</iframe>
+			<script language="javascript">
+			<!--
+			function reset() {
+			self.document.psowrte.data.value="";
+			self.document.psowrte.data.focus();
+			}
+			-->
+			</script>			
+			<div id="user"><form method="post" action="/cgi-bin/psowrte.py" target="psoread" name="psowrte" onsubmit="setTimeout('reset()',10)"> <b>Name:</b><input value="Anonymous" name="name" size="10" type="text"><br><b>Message:</b><input name="data" size="25" type="text">&nbsp;&nbsp; <input value="Say!" name="submit" type="submit">
+			</div>
+			<div id="color"><b>Color:</b> Default<input value="def" name="color" checked="checked" type="radio"> | <font color="#0000ff">Blue</font><input value="blue" name="color" type="radio"> | <font color="#008000">Green</font><input value="green" name="color" type="radio"> | <font color="#ff6600">Orange</font><input value="orange" name="color" type="radio"> | <font color="#ff0000">Red</font><input value="red" name="color" type="radio"> 
+			</div>
+			</form>
+			</article>
+			<article>
+			<h1>Send a file!</h1>
+			<iframe  width='100%' height="80px" frameBorder='0' src='http://piratebox.lan:8080'>Your browser does not supprt Iframes.. If you want to upload something, follow this <a href='http://piratebox.lan:8080'>Link</a></iframe>
+			</article>
+		</section>
+	</div>		
+			
+		
+</div>
+<footer id="footer">
+<h3>About the PirateBox</h3>
+<p>Inspired by pirate radio and the free culture movment, PirateBox is a self-contained mobile collaboration and file sharing device. PirateBox utilizes Free, Libre and Open Source software (FLOSS) to create mobile wireless file sharing networks where users can anonymously share images, video, audio, documents, and other digital content.</p>
+<p>PirateBox is designed to be safe and secure. No logins are required and no user data is logged. The system is purposely not connected to the Internet in order to prevent tracking and preserve user privacy.</p>
+<p>PirateBox was created by David Darts and is registered under a Free Art License (2011). To learn more about the project or to find out how to build your own PirateBox system, please visit <a href="http://wiki.daviddarts.com/piratebox">http://wiki.daviddarts.com/piratebox</a>.</p>
+</footer>
+</body>
+</html>
