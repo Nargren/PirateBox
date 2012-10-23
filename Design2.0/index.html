@@ -6,11 +6,24 @@
 	<title>PirateBox - Share Freely</title>
 	<script src="jquery.min.js"/>	
 	<script type="text/javascript">
+	
+	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) && localStorage["mobile"] != "false")
+		window.location = "mindex.html";
+	// If the device is mobile and hasn't chosen explicitly to open the browser version, then redirect it to the mobile page
+
+
 	function refresh() {
-	 frame = document.getElementsByName( 'psoread' )[0];
-	 frame.contentWindow.location.reload()
+	 /*frame = document.getElementsByName( 'psoread' )[0];
+	 frame.contentWindow.location.reload()*/
+	 // This isn't needed, as the iframe is reloaded in chat.html
+
+		$("#station_cnt").load("station_cnt.txt", function () {
+			$("#station_cnt a").attr("title", ""); //There is no need to ask the user to refresh the page, as station_cnt will refresh itself.
+		});
 	}
-	interval = window.setInterval( 'refresh()', 8000 );
+	refresh();
+	interval = window.setInterval( 'refresh()', 60000 ); 
+	//Every minute (station_cnt.txt refreshes every 2 minutes, but this way we are sure to have statistics which aren't too old)
   </script>
 </head>
   <body>
@@ -54,16 +67,27 @@
 				</div>
 			<div id="news">
 			<h2>Do you want to build your PirateBox?</h2>
-			<p>Visit  Daviddarts.com after you have connected to the internet to find useful guides & instructions on building your own PirateBox. By checking out the forums you can not only learn how to make a PirateBox for less than 100 punds, but also you can stay informed
+			<p>Visit  Daviddarts.com after you have connected to the internet to find useful guides & instructions on building your own PirateBox. By checking out the forums you can not only learn how to make a PirateBox for less than 35 pounds, but also you can stay informed
 			about the development of the project.</p>
 			</div>
+
+	<!-- I added a section here to show how simple the setup is -->
+
+			<div id="news>
+			<h2>This setup</h2>
+			<p>TP-Link MR3020</p>
+			<p>SanDisk Cruzer Blade 4 GB</p>
+			<p>Design 2.0 by Nagren</>
+			</div>
+	<!-- And a div for station_cnt -->
+			<div id="station_cnt"></div>
 			</aside>
 	</div>		
 			
 		
 </div>
 <footer id="footer">
-<p>PirateBox is Licenced under Free Art Licence (2011) | Storage 30GB | Speeds up to 2 MB/s</p>
+<p>PirateBox is Licenced under Free Art Licence (2011) | Storage 4GB | Speeds up to 2 MB/s</p>
 </footer>
 </body>
 </html>
