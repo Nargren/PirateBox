@@ -181,7 +181,7 @@ a.links:hover{
 }
 /* Added a few styles */
 ::selection{
-	background-color: rgb(154,55,55); /*Same as the "BOX" on piratebox-logo_large.png
+	background-color: rgb(154,55,55); /*Same as the "BOX" on piratebox-logo_large.png*/
 }
 #station_cnt{
 	margin: 20px 0px 0px 0px;
