@@ -4,19 +4,28 @@
 	<meta name="viewport" content="width="480" />
 	<link rel="stylesheet" href="mobile.css" media="handheld,all">
 	<link rel="shortcut icon" href="favicon.ico">
-	<title>PirateBox - Mobile</title>  
+	<title>PirateBox - Mobile</title>
+	<script src="jquery.min.js"></script>
+		<!-- I have included jQuery to make things easier. Maybe a mistake for mobile devices? -->
 	<script type="text/javascript">
 function refresh() {
- frame = document.getElementsByName( 'psoread' )[0];
+
+ /*frame = document.getElementsByName( 'psoread' )[0];
  frame.contentWindow.location.reload()
+	Again, this isn't needed. */
+
+	$("#station_cnt").load("station_cnt.txt", function () {
+		$("#station_cnt a").attr("title", "");
+	});
 }
-interval = window.setInterval( 'refresh()', 8000 );
+refresh()
+interval = window.setInterval( 'refresh()', 60000 );
   </script>
 </head>
   <body>
 	<nav id="top_nav">
 		<ul>
-			<li><a class="links" href="index.html" title="Return to browser version!">Browser</a></li>
+			<li><a class="links" href="index.html" title="Return to browser version!" onclick="localStorage['mobile']=false">Browser</a></li>
 			<li><a class="links" href="/Shared" target="blank" title="Browse PirateBox">Download</a></li>
 			
 		</ul>
@@ -26,7 +35,7 @@ interval = window.setInterval( 'refresh()', 8000 );
 		<section id="main">
 			<article class="special">
 			<h3>Welcome to my "PirateBox"!</h3>
-			<h2>NOTHING ILLEGAL, just a cool, social place</h2>
+			<h2>Nothing illegal, just a cool, social place</h2>
 			<p>Now first of all, there is nothing illegal going on here, this is a social place where you can chat with people around you and share files absolutely anonymously!
 			No data is logged and you are on pourpose not connected to the internet to maintain your anonymity.
 			This is only a local network (Wi-Fi) hence you have to remain in range if you wish to stay connected.
@@ -51,6 +60,7 @@ interval = window.setInterval( 'refresh()', 8000 );
 <p>Inspired by pirate radio and the free culture movment, PirateBox is a self-contained mobile collaboration and file sharing device. PirateBox utilizes Free, Libre and Open Source software (FLOSS) to create mobile wireless file sharing networks where users can anonymously share images, video, audio, documents, and other digital content.</p>
 <p>PirateBox is designed to be safe and secure. No logins are required and no user data is logged. The system is purposely not connected to the Internet in order to prevent tracking and preserve user privacy.</p>
 <p>PirateBox was created by David Darts and is registered under a Free Art License (2011). To learn more about the project or to find out how to build your own PirateBox system, please visit <a href="http://wiki.daviddarts.com/piratebox">http://wiki.daviddarts.com/piratebox</a>.</p>
+<span id="station_cnt"></span>
 </footer>
 </body>
 </html>
