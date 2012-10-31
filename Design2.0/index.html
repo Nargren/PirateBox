@@ -21,9 +21,12 @@
 			$("#station_cnt a").attr("title", ""); //There is no need to ask the user to refresh the page, as station_cnt will refresh itself.
 		});
 	}
-	refresh();
-	interval = window.setInterval( 'refresh()', 60000 ); 
-	//Every minute (station_cnt.txt refreshes every 2 minutes, but this way we are sure to have statistics which aren't too old)
+		
+		$(document).ready(function () {
+			refresh();
+			interval = window.setInterval( 'refresh()', 60000 ); 
+			//Every minute (station_cnt.txt refreshes every 2 minutes, but this way we are sure to have statistics which aren't too old)
+		});
   </script>
 </head>
   <body>
