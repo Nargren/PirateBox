@@ -18,14 +18,16 @@ function refresh() {
 		$("#station_cnt a").attr("title", "");
 	});
 }
+$(document).ready(function () {
 refresh()
 interval = window.setInterval( 'refresh()', 60000 );
+});
   </script>
 </head>
   <body>
 	<nav id="top_nav">
 		<ul>
-			<li><a class="links" href="index.html" title="Return to browser version!" onclick="localStorage['mobile']=false">Browser</a></li>
+			<li><a class="links" href="index.html" title="Return to browser version!" onclick="sessionStorage['mobile']=false">Browser</a></li>
 			<li><a class="links" href="/Shared" target="blank" title="Browse PirateBox">Download</a></li>
 			
 		</ul>
