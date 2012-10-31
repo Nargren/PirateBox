@@ -7,7 +7,7 @@
 	<script src="jquery.min.js"/>	
 	<script type="text/javascript">
 	
-	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) && localStorage["mobile"] != "false")
+	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) && sessionStorage["mobile"] != "false")
 		window.location = "mindex.html";
 	// If the device is mobile and hasn't chosen explicitly to open the browser version, then redirect it to the mobile page
 
