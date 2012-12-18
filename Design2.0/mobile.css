@@ -119,3 +119,13 @@ a.links:hover{
     color: #e9e9e9;
 	line-height:115%;
 }
+#station_cnt{
+	text-align: center;
+}
+#station_cnt a{
+	color: white;
+	font-size:70%;
+}
+#station_cnt a:hover{
+	color: white;
+}
