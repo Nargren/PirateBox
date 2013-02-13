@@ -14,7 +14,7 @@ http://piratebox.aod-rpg.de/dokuwiki/doku.php?id=modification_list#show_connecte
 
 
 ###---How to install---###
-####EXPERIMENTAL Install####
+####Experimental Install####
 This is a test procedure trying to make using my design easier. Do as follows:
 
 -Download pbIMG_ws_NargrensD2.img
