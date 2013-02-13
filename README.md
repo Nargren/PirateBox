@@ -14,7 +14,19 @@ http://piratebox.aod-rpg.de/dokuwiki/doku.php?id=modification_list#show_connecte
 
 
 ###---How to install---###
+####EXPERIMENTAL Install####
+This is a test procedure trying to make using my design easier. Do as follows:
 
+-Download pbIMG_ws_NargrensD2.img
+-Plug in your PirateBox's USB to your computer
+-Copy this file to USB/PirateBox folder
+-Rename the file "pbIMG_ws.img" to "pbIMG_ws_BACKUP.img"
+-Rename the file "pbIMG_ws_NargrensD2.img" to "pbIMG_ws.img"
+-Remove the USB from your computer, plug in to router and boot
+
+If you want to stop using my design, simply rename the files again,keeping in mind that the design contained in te pbIMG_ws.img is always used.
+
+####Normal Install####
 - Download the source code as zip or tar.gz and plug your USB stick into your computer.
 - Unzip/unpack and place the contents of Design2.0 into
 
