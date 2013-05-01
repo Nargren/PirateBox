@@ -169,7 +169,7 @@ a.links:hover{
 	display:box;
 	margin:auto;
 }
-#news{
+.news{
 	border-top: solid 1px black;
 	margin: 20px 0px 0px 0px; /* top,right,bottom,left */
 	padding: 10px 0px 0px 0px; /* top,right,bottom,left */
@@ -207,4 +207,26 @@ a.links:hover{
    height: 350px;
    max-height: 400px;
    overflow: hidden;
+}
+
+/* chat text colors */
+.blue {
+	color: #0000FF;
+}
+
+.green {
+	color: #008000;
+}
+
+.orange {
+	color: #FF8040;
+}
+
+.red {
+	color: #FF0000;
+}
+
+/* iframe */
+iframe {
+	border: 0;
 }
