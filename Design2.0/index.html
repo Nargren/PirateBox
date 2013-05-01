@@ -56,7 +56,9 @@
 
 	  	function post_shoutbox () {
 	    	$.post("/cgi-bin/psowrte.py" , $("#sb_form").serialize())
-	        .success(function() { refresh_shoutbox(); });
+	        .success(function() { 
+	        	refresh_shoutbox(); 
+	        });
 	     	$('#sb_form_text').val("");
 	    }
 
