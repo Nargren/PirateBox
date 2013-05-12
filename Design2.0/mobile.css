@@ -142,3 +142,26 @@ a.links:hover{
    max-height: 400px;
    overflow: hidden;
 }
+
+/* chat text colors */
+.blue {
+	color: #0000FF;
+}
+
+.green {
+	color: #008000;
+}
+
+.orange {
+	color: #FF8040;
+}
+
+.red {
+	color: #FF0000;
+}
+
+/* iframe */
+iframe {
+	border: 0;
+	width: 100%;
+}
